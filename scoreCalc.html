@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학점계산기</title>
+    <link rel="stylesheet" href="scoreCalc.css">
+</head>
+<body>
+    <h1>학점계산기 (학기별)</h1>
+
+    <section>
+        <div class="head_container">
+            <input type="radio" name="max_grade" value="max4.5" checked>4.5 만점
+            <input type="radio" name="max_grade" value="max4.3">4.3 만점
+
+            <span>
+                <input type="text" class="year"> 년
+                <select class="semester" name="semester">
+                    <option value="sem1">1</option>
+                    <option value="sem2">2</option>
+                </select> 학기
+                <button id="addButton">항목추가</button>
+            </span>
+        </div>
+        <table id="scoreTable" border="1">
+            <tr>
+                <th>과목명</th>
+                <th>학점수</th>
+                <th>평점</th>
+                <th>이수구분</th>
+                <th>과목정보 불러오기</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="courseName">
+                </td>
+                <td>
+                    <input type="number" class="gradeCount">
+                </td>
+                <td>
+                    <input type="text" class="score">
+                </td>
+                <td>
+                    <select class="classification" name="classification">
+                    <option value="major">전공</option>
+                    <option value="culture">교양</option>
+                    <option value="other">기타</option>
+                </td>
+                <td>
+                    <button>시간표에서 불러오기</button>
+                </td>
+                <td>
+                    <button>삭제</button>
+                </td>
+                </select>
+            </tr>
+        </table>
+        <div class="foot_container">
+            <button id="calcButton">계산</button>
+            <button>초기화</button>
+        </div>
+    </section>
+</body>
+<script>
+const table = document.getElementById('scoreTable');
+const $addButton = document.getElementById('addButton');
+const deleteButtons = document.getElementsByClassName('deleteButton');
+const $calcButton = document.getElementById('calcButton');
+
+function addRow() {
+const newRow = table.insertRow();
+
+const newCourseName = newRow.insertCell(0);
+const newGradeCount = newRow.insertCell(1);
+const newScore = newRow.insertCell(2);
+const newClassification = newRow.insertCell(3);
+const newImportButton = newRow.insertCell(4);
+const newDeleteButton = newRow.insertCell(5);
+
+newCourseName.innerHTML = "<td><input type=text class=courseName></td>";
+newGradeCount.innerHTML = "<td><input type=number class=gradeCount></td>";
+newScore.innerHTML = "<td><input type=text class=score></td>"
+newClassification.innerHTML = "<td><select class=classification name=classification><option value=major>전공</option><option value=culture>교양</option><option value=other>기타</option></td>";
+newImportButton.innerHTML = "<td><button>시간표에서 불러오기</button></td>";
+newDeleteButton.innerHTML = "<td><button class=deleteButton>삭제</button></td>";
+}
+
+function deleteRow(e) {
+    
+}
+
+function calcScore() {
+    let sum = 0;
+    let grade = 0;
+    let average;
+    console.log('a');
+
+    for(let i = 1; i < table.rows.length; i++) {
+       sum += parseInt(table.rows[i].cells[2].innerHTML) * table.rows.cells[1];
+       grade += parseInt(table.rows[i].cells[1].innerHTML);
+    }
+
+    average = sum / grade;
+    console.log(average);
+}
+
+$addButton.addEventListener("click", addRow);
+$calcButton.addEventListener("click", calcScore);
+</script>
+</html>

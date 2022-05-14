@@ -1,0 +1,49 @@
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 14.1rem;
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.7rem;
+  }
+
+.find-ID__main {
+    padding: 1.85rem;
+    margin: 1.85rem auto;
+    width: 33%;
+    min-width: 22rem;
+    max-width: 90%;
+  }
+
+.find-ID__control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 1rem;
+}
+
+.find-ID__button button {
+    margin-top: 1.45rem;
+    padding: 0.5rem 7.1rem;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.find-ID__email button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}

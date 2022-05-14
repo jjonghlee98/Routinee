@@ -1,0 +1,81 @@
+h2 {
+    text-align: center;
+}
+
+.login-form__main {
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 30%;
+    min-width: 19rem;
+    max-width: 90%;
+}
+
+.login-form__control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-form__button button {
+    margin-top: 1.45rem;
+    padding: 0.5rem 6.3rem;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.login-form__button button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+input {
+    width: 13rem;
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.7rem;
+  }
+
+.login-form__ID, .login-form__pwd {
+    float: right;
+}
+
+.login-form__ID label {
+    margin: 2.03rem;
+}
+
+.login-form__pwd label {
+    margin: 0.536rem;
+}
+
+.login-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:0.95em auto;
+}
+
+.login-menu div {
+    padding: 0 1rem;
+    border-right: 1px solid black;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.login-menu div a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.login-menu div:nth-last-child(1) {
+    border-right: none;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
