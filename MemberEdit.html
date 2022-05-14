@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MemberEdit.css">
+</head>
+<body>
+    <div class="MemberEditForm_main card">
+        <h2>회원정보수정</h2>
+        <form class="MemberEditForm_control">
+            <div class="MemberEditForm_ProfilePicture">
+                <label>프로필 사진</label>
+                <input type="file" placeholder="profile" required/>
+                <!---<form action="" method="post">*/}
+                {/*    <input type="file" name="profile"></input>*/}
+                {/*</form>*/} -->
+            </div>
+            <div class="MemberEditForm_ChangeNickname">
+                <label>닉네임 변경</label>
+                <input type="text" placeholder="Enter a Change Nickname" required/>
+            </div>
+            <div class="MemberEditForm_name">
+                <label>이름</label>
+                <input type="text" placeholder="Enter a name" required/>
+            </div>
+            <div class="MemberEditForm_email">
+                <label>이메일</label>
+                <input type="email" placeholder="Enter an email" required/>
+            </div>
+            <div class="MemberEditForm_beforePasswordChange">
+                <label>비밀번호 변경 전</label>
+                <input type="password" placeholder="Before password change" required/>
+            </div>
+            <div class="MemberEditForm_AfterPasswordChange">
+                <label>비밀번호 변경 후</label>
+                <input type="password" placeholder="Enter confirmation after changing password" required/>
+            </div>
+            <div class="MemberEditForm_ConfirmAfterPasswordChange">
+                <label>비밀번호 변경 후 확인</label>
+                <input type="password" placeholder="Enter confirmation after changing password" required/>
+            </div>
+    
+            <div class="MemberEditForm_clear">
+                <button>정보수정</button>
+            </div>
+            <div class="MemberEditForm_secession">
+                <button>회원탈퇴</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

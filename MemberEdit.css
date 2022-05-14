@@ -1,0 +1,143 @@
+*
+{
+    transition: .6s;
+}
+
+.MemberEditForm_main
+{
+    padding: 2.5rem;
+    margin: 2rem auto;
+    width: 33%;
+    min-width: 22rem;
+    max-width: 90%;
+}
+
+.MemberEditForm_control
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*프로필 사진*/
+.MemberEditForm_ProfilePicture label
+{
+    display: flex;
+    margin: 0.25rem 0;
+}
+
+/*닉네임 변경*/
+.MemberEditForm_ChangeNickname label
+{
+    display: flex;
+    margin: 0.25rem 0;
+}
+
+.MemberEditForm_name label
+{
+    display: flex;
+    margin: 0.25rem 0;
+}
+
+.MemberEditForm_email label
+{
+    display: flex;
+    margin: 0.25rem 0;
+}
+
+/*비밀번호 변경 전*/
+.MemberEditForm_beforePasswordChange label
+{
+    display: flex;
+    margin: 0.25rem 0;
+}
+
+/*비밀번호 변경 후*/
+.MemberEditForm_AfterPasswordChange label
+{
+    display: flex;
+    margin: 0.25rem 0;
+}
+/*비밀번호 변경 후 확인*/
+.MemberEditForm_ConfirmAfterPasswordChange label
+{
+    display: flex;
+    margin: 0.25rem 0;
+}
+
+input
+{
+    width: 13rem;
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.7rem;
+}
+
+.MemberEditForm_email input
+{
+    margin-bottom: 1.25rem;
+}
+
+.MemberEditForm_nick input
+{
+    margin-bottom: 1.25rem;
+}
+
+/*회원수정*/
+.MemberEditForm_clear
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.MemberEditForm_clear button
+{
+    border-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    width: 15rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.MemberEditForm_clear button:hover
+{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/*회원탈퇴*/
+.MemberEditForm_secession
+{
+    display: flex;
+    flex-direction: column;
+}
+.MemberEditForm_secession button
+{
+    border-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    width: 15rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+.MemberEditForm_secession button:hover
+{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
