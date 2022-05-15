@@ -2,11 +2,18 @@ let btn = document.querySelector("#btn");
 let sidebar = document.querySelector(".sidebar");
 let searchBtn = document.querySelector(".bx-search");
 
+// btn.onclick = () => {
+//   sidebar.classList.toggle("active");
+// }
 
-btn.onclick = () => {
-  sidebar.classList.toggle("active");
-}
+// searchBtn.onclick = () => {
+//   sidebar.classList.toggle("active");
+// }
 
-searchBtn.onclick = () => {
+btn.addEventListener("click", () => {
   sidebar.classList.toggle("active");
-}
+});
+
+searchBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+})
