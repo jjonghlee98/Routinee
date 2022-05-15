@@ -2,19 +2,20 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Page</title>
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sidebar tutorial</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div>
+    <!-- <div>
       <nav>
         <ul class="nav nav-pills nav-fill">
           <li class="nav-item">
@@ -36,15 +37,100 @@
             <a class="nav-link" href="./MemberEdit.html">내정보 수정</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="bx bxs-cat"></i>
+          <div class="logo_name">Routinee</div>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-dog"></i>
+            <span class="links_name">Dog</span>
+          </a>
+          <span class="side_menu">Dog</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-baguette"></i>
+            <span class="links_name">Baguette</span>
+          </a>
+          <span class="side_menu">Baguette</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-fork"></i>
+            <span class="links_name">Fork</span>
+          </a>
+          <span class="side_menu">Fork</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-bowl-rice"></i>
+            <span class="links_name">Rice</span>
+          </a>
+          <span class="side_menu">Rice</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-money-withdraw"></i>
+            <span class="links_name">Money</span>
+          </a>
+          <span class="side_menu">Money</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-party"></i>
+            <span class="links_name">Party</span>
+          </a>
+          <span class="side_menu">Party</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-leaf"></i>
+            <span class="links_name">Leaf</span>
+          </a>
+          <span class="side_menu">Leaf</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-hand"></i>
+            <span class="links_name">Hand</span>
+          </a>
+          <span class="side_menu">Hand</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxl-sketch"></i>
+            <span class="links_name">Rubi</span>
+          </a>
+          <span class="side_menu">Rubi</span>
+        </li>
+      </ul>
+      <div class="profile_content">
+        <div class="profile">
+          <div class="profile_detail">
+            <img src="zzang.jpg" alt="zzang" />
+            <div class="name_job">
+              <div class="name">Jonghwan Lee</div>
+              <div class="job">Web Developer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out"></i>
+        </div>
+      </div>
     </div>
-    <h1>Main Page</h1>
-
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+    <div class="home_content">
+      <div class="text">Home Content</div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
