@@ -62,6 +62,7 @@ body {
   transform: translateX(-50%);
   color: #d4a373;
   transition: all 0.6s ease;
+  cursor: pointer;
 }
 
 .sidebar.active .logo_content #btn {
@@ -703,21 +704,25 @@ body {
 .add_title_form {
   opacity: 0;
   transition: all .6s ease;
+  pointer-events: none;
 }
 
 .box2_flex.active .add_title_form{
   opacity: 1;
   transition: all 2.3s ease;
+  pointer-events: all;
 }
 
 
 .goal_title_form {
   opacity: 0;
   transition: all 0.6s ease;
+  pointer-events: none;
 }
 .box3_flex.active .goal_title_form {
   opacity: 1;
   transition: all 2.3s ease;
+  pointer-events: all;
 }
 
 .box3_flex {
