@@ -288,14 +288,38 @@ body {
   height: 65px;
 }
 
-.dashboard .profile_img {
+.dashboard .top .talk .talk_border {
+  line-height: 65px;
+  /* transform: translateY(60%); */
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.dashboard .top .bell {
+  line-height: 65px;
+  font-size: 24px;
+}
+
+.dashboard .profile {
   display: flex;
   justify-content: center;
-  width: 65px;
+  width: 100px;
   height: 65px;
   align-items: center;
   transform: translateX(-10%);
-  /* border: 1px solid black; */
+}
+
+.dashboard .profile .uil-comment {
+  font-size: 22px;
+  transform: translateX(-10%);
+}
+
+.dashboard .profile .uil-bell {
+  font-size: 22px;
+  /* padding-left: 5px; */
 }
 
 .dashboard img {
@@ -385,7 +409,7 @@ body {
   align-items: center;
 }
 
-.dash_content .boxes .box .calc_title {
+.dash_content .boxes .box .goal_title {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
