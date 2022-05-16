@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마이페이지</title>
+  <link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+/>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="mypage.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <i class="bx bxs-cat"></i>
+        <div class="logo_name">Routinee</div>
+      </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search..." />
+      </li>
+      <li>
+        <a href="/mypage.html" class="selected">
+          <i class='bx bx-home' ></i>
+          <span class="links_name">My Page</span>
+        </a>
+        <span class="side_menu">My Page</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-calendar-check'></i>
+          <span class="links_name">Calendar</span>
+        </a>
+        <span class="side_menu">Calendar</span>
+      </li>
+      <li>
+        <a href="/friends.html">
+          <i class='bx bxs-hand' ></i>
+          <span class="links_name">Friend</span>
+        </a>
+        <span class="side_menu">Friend</span>
+      </li>
+      <!-- <li>
+        <a href="#">
+          <i class="bx bx-bowl-rice"></i>
+          <span class="links_name">Rice</span>
+        </a>
+        <span class="side_menu">Rice</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-money-withdraw"></i>
+          <span class="links_name">Money</span>
+        </a>
+        <span class="side_menu">Money</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-party"></i>
+          <span class="links_name">Party</span>
+        </a>
+        <span class="side_menu">Party</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-leaf"></i>
+          <span class="links_name">Leaf</span>
+        </a>
+        <span class="side_menu">Leaf</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-hand"></i>
+          <span class="links_name">Hand</span>
+        </a>
+        <span class="side_menu">Hand</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxl-sketch"></i>
+          <span class="links_name">Rubi</span>
+        </a>
+        <span class="side_menu">Rubi</span>
+      </li> -->
+    </ul>
+    <div class="profile_content">
+      <div class="profile">
+        <div class="profile_detail">
+          <img src="zzang.jpg" alt="zzang" />
+          <div class="name_job">
+            <div class="name">Jonghwan Lee</div>
+            <div class="job">Web Developer</div>
+          </div>
+        </div>
+        <i class="bx bx-log-out"></i>
+      </div>
+    </div>
+  </aside>
+  <!-- sidebar ends -->
+
+  <section class="dashboard">
+    <div class="top">
+      <!-- <div class="nav-search">
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search..." />
+      </div> -->
+      <div class="talk">
+        <div class="talk_border">
+          <i class="uil uil-comment"></i>
+        </div>
+      </div>
+      <div class="bell">
+        <i class="uil uil-bell"></i>
+      </div>
+      <div class="profile">
+        <img src="zzang.jpg" alt="zzang" />
+      </div>
+    </div>
+
+    <div class="dash_content">
+      <div class="main_content">
+        <div class="title">
+          <img src="zzang.jpg" alt="zzang" />
+          <span class="text mynick">내닉네임</span> <span class="myid">thor0250</span>
+          <button class="edit_button" onclick="location.href='/MemberEdit.html'"><i class='bx bx-edit-alt'></i>정보수정</button>
+        </div>
+
+        <div class="boxes">
+          <div class="box box1">
+            <div class="schedule_title">
+              <i class="uil uil-schedule"></i>
+              <span class="text">Schedule</span>
+            </div>
+            <div class="schedule">일정</div>
+          </div>
+          <div class="box box2">
+            <div class="dday_title">
+              <i class="uil uil-hourglass"></i>
+              <span class="text">D-day</span>
+            </div>
+            <div class="dday">디데이</div>
+          </div>
+          <div class="box box3">
+            <div class="goal_title">
+              <i class="uil uil-calculator-alt"></i>
+              <span class="text">Goal</span>
+            </div>
+            <div class="goal">목표</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="text">Home Content</div> -->
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

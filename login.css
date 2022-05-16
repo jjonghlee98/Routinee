@@ -38,7 +38,7 @@ input {
     padding: 0.5rem 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     margin-bottom: 0.7rem;
-  }
+}
 
 .login-form__ID, .login-form__pwd {
     float: right;

@@ -797,3 +797,11 @@ body {
   }
 }
 
+.selected {
+  background: #ccd5ae;
+  color: white;
+}
+
+.selected span, .selected i {
+  color: white;
+}
