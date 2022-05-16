@@ -603,6 +603,7 @@ body {
   padding: 15px 20px;
   background: #f1faee;
   top: 0;
+  overflow: auto; /* box 칸을 넘으면 넘치치 않고 스크롤이 생김 */
 }
 
 .dash_content .boxes .box {
