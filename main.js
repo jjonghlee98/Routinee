@@ -33,18 +33,20 @@ gBtn.addEventListener("click", () => {
   box3Flex.classList.toggle("active");
 });
 
-// const calc = () => {
-//   var now = new Date($("#start").val());
-//   var then = new Date($("#end").val());
-//   var gap = now.getTime() - then.getTime();
-//   gap = Math.floor(gap / (1000 * 60 * 60 * 24));
 
-//   if (gap < 0)
-//   {
-//       $("#output").text(("D " + gap));
-//   }
-//   else
-//   {
-//       $("#output").text(("D + " + gap));
-//   }
-// }
+
+const calc = () => {
+  var now = new Date($("#start").val());
+  var then = new Date($("#end").val());
+  var gap = now.getTime() - then.getTime();
+  gap = Math.floor(gap / (1000 * 60 * 60 * 24));
+
+  if (gap < 0)
+  {
+      $("#output").text(("D " + gap));
+  }
+  else
+  {
+      $("#output").text(("D + " + gap));
+  }
+}
