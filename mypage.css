@@ -54,11 +54,53 @@ hr {
 
 .myActivity {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.35fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
 }
 
-.myBoardActivity {
+.mba-flex {
   display: flex;
   flex-direction: row;
 }
+
+.titlebox {
+  background: #cae1ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  margin: 12px;
+}
+
+.bodybox {
+  text-align: center;
+  font-weight: bold;
+  height: 120px;
+  border-radius: 12px;
+  padding: 15px 20px;
+  background: #a5cefd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.myBoardActivity .bodybox {
+  width: 25%;
+  margin: 8px;
+}
+
+.myActivity-title {
+  grid-column: 1 / 6;
+  height: 30%;
+}
+
+.count {
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+/*.bodybox i {
+  font-size: 26px;
+}
+
+.bodybox .bx-chevron-right {
+  font-size: 22px;
+}*/
