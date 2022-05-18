@@ -240,3 +240,30 @@ h3 {
 .logo_name:hover {
   cursor: pointer;
 }
+
+@media(max-width: 918px) {
+  .friends_container {
+    flex-direction: column;
+    height: 960px;
+  }
+
+  .request_container {
+    margin-left: 0;
+    height: 550px;
+  }
+
+  .friend_list_title {
+    height: 410px;
+    margin-bottom: 25px;
+  }
+
+  .received_request_title {
+    height: 250px;
+  }
+  
+  .sent_request_title {
+    width: 100%;
+    height: 250px;
+    margin-top: 0;
+  }
+}
