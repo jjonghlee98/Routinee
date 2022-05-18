@@ -17,3 +17,48 @@
   color: white;
   transition: .5s;
 }
+
+#hidden_profile {
+  width: 140px;
+  right: 20px;
+  top: 4rem;
+  padding: 2rem;
+  border: 1px solid black;
+  background-color: #fafafa;
+  /*display: flex;
+  flex-direction: column;*/
+  position: absolute;
+}
+
+#hidden_profile a {
+  text-decoration: none;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.mynick {
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+hr {
+  margin-bottom: 14px;
+}
+
+.logo_name:hover {
+  cursor: pointer;
+}
+
+.myActivity {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.myBoardActivity {
+  display: flex;
+  flex-direction: row;
+}

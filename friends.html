@@ -21,7 +21,7 @@
     <div class="logo_content">
       <div class="logo">
         <i class="bx bxs-cat"></i>
-        <div class="logo_name">Routinee</div>
+        <div class="logo_name" onclick="location.href='main.html';">Routinee</div>
       </div>
       <i class="bx bx-menu" id="btn"></i>
     </div>
@@ -131,7 +131,7 @@
     <div class="dash_content">
       <div class="friends_container">
         <div class="friend_list_title titlebox">
-          <span class="menu_title">친구 목록 (<span class="friends_count">2</span>)</span>
+          <label class="menu_title">친구 목록 (<span class="friends_count">2</span>)</label>
           <div class="friend_list_body bodybox">
             <div class="friend friend1">
               <img src="zzang.jpg" alt="zzang" />
@@ -152,31 +152,34 @@
           </div>
         </div>
 
-        <div class="received_request_title titlebox">
-          <span class="menu_title">받은 친구 요청 (<span class="received_count">1</span>)</span>
-          <div class="received_request_body bodybox">
-            <div class="friend s_friend1">
-              <img src="image3.jpg" alt="zzang" />
-              <span class="friend_name">성춘향</span>
-              <i class='bx bxs-user-check'><span class="hidden-menu">요청수락</span></i>
-              <i class='bx bxs-user-x'><span class="hidden-menu">요청거부</span></i>
+        <div class="request_container">
+          <div class="received_request_title titlebox">
+            <label class="menu_title">받은 친구 요청 (<span class="received_count">1</span>)</label>
+            <div class="received_request_body bodybox">
+              <div class="friend s_friend1">
+                <img src="image3.jpg" alt="zzang" />
+                <span class="friend_name">성춘향</span>
+                <i class='bx bxs-user-check'><span class="hidden-menu">요청수락</span></i>
+                <i class='bx bxs-user-x'><span class="hidden-menu">요청거부</span></i>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="sent_request_title titlebox">
-          <span class="menu_title">보낸 친구 요청 (<span class="sent_count">1</span>)</span>
-          <div class="sent_request_body bodybox">
-            <div class="friend s_friend1">
-              <img src="pexels-photo-129731.jpeg" alt="zzang" />
-              <span class="friend_name">김철수</span>
-              <i class='bx bx-block'><span class="hidden-menu">요청취소</span></i>
+  
+          <div class="sent_request_title titlebox">
+            <label class="menu_title">보낸 친구 요청 (<span class="sent_count">1</span>)</label>
+            <div class="sent_request_body bodybox">
+              <div class="friend s_friend1">
+                <img src="pexels-photo-129731.jpeg" alt="zzang" />
+                <span class="friend_name">김철수</span>
+                <i class='bx bx-block'><span class="hidden-menu">요청취소</span></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="find-friend titlebox">
+        <div class="find-friend-contents">
         <h3>친구 찾기</h3>
         <div class="find-friend-bar">
           <i class="bx bx-search"></i>
@@ -189,6 +192,7 @@
         </div>
         <button class="add_friend_btn">친구 요청</button>
       </div>
+      </div>  
     </div>
 
     <script src="main.js"></script>

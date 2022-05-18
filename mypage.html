@@ -18,10 +18,10 @@
 </head>
 <body>
   <aside class="sidebar">
-    <div class="logo_content">
+    <div class="logo_content" >
       <div class="logo">
         <i class="bx bxs-cat"></i>
-        <div class="logo_name">Routinee</div>
+        <div class="logo_name" onclick="location.href='main.html';">Routinee</div>
       </div>
       <i class="bx bx-menu" id="btn"></i>
     </div>
@@ -124,46 +124,104 @@
         <i class="uil uil-bell"></i>
       </div>
       <div class="profile">
-        <img src="zzang.jpg" alt="zzang" />
+        <img src="zzang.jpg" alt="zzang" id="profile-menu-btn"/>
+        <div id="hidden_profile" class="hidden">
+          <p class="text mynick">내닉네임</p>
+          <hr>
+          <a href="MemberEdit.html">정보수정</a>
+          <a href="#">로그아웃</a>
+        </div>
       </div>
     </div>
 
     <div class="dash_content">
+      <h3>내 활동</h3>
+      <div class="myActivity titlebox">
+        <div class="myTodayGoal">
+          <p>오늘의 내 목표 <i class='bx bx-chevron-right'></i></p>
+          <p>2 / 3</p>
+        </div>
+        <div class="myTotalGoal">
+          <p>내 전체 목표 <i class='bx bx-chevron-right'></i></p>
+          <p>172 / 177</p>
+        </div>
+        <div class="myTodayTodo">
+          <p>오늘의 내 일정 <i class='bx bx-chevron-right'></i></p>
+          <p>3 / 5</p>
+        </div>
+        <div class="myTotalTodo">
+          <p>내 전체 일정 <i class='bx bx-chevron-right'></i></p>
+          <p>90 / 101</p>
+        </div>
+        <div class="myDday">
+          <p>내 D-DAY <i class='bx bx-chevron-right'></i></p>
+          <p>2</p>
+        </div>
+        <div class="myTimeTable">
+          <p>내 시간표 <i class='bx bx-chevron-right'></i></p>
+          <i class='bx bx-table' ></i>
+        </div>
+        <div class="myCalendar">
+          <p>내 캘린더 <i class='bx bx-chevron-right'></i></p>
+          <i class='bx bxs-calendar'></i>
+        </div>
+        <div class="myDiary bodybox">
+          <p>내 일기 <i class='bx bx-chevron-right'></i></p>
+          <p>16</p>
+        </div>
+        <div class="myFriends bodybox">
+          <p>내 친구 <i class='bx bx-chevron-right'></i></p>
+          <p>45</p>
+        </div>
+        <div class="myFile bodybox">
+          <p>내 파일 <i class='bx bx-chevron-right'></i></p>
+          <p>10</p>
+        </div>
+      </div>
+      <h3>내 게시판 활동</h3>
+      <div class="myBoardActivity titlebox">
+        <div class="myFreePosts bodybox">
+          <p>내 자유게시판 글 <i class='bx bx-chevron-right'></i></p>
+          <p>13</p>
+        </div>
+        <div class="myFreeComments bodybox">
+          <p>내 자유게시판 댓글 <i class='bx bx-chevron-right'></i></p>
+          <p>186</p>
+        </div>
+        <div class="mySharePosts bodybox">
+          <p>내 일정공유 글 <i class='bx bx-chevron-right'></i></p>
+          <p>61</p>
+        </div>
+        <div class="mySharePosts bodybox">
+          <p>내 일정공유 댓글 <i class='bx bx-chevron-right'></i></p>
+          <p>215</p>
+        </div>
+      </div>
+
       <div class="main_content">
-        <div class="title">
+        <!--<div class="title">
           <img src="zzang.jpg" alt="zzang" />
           <span class="text mynick">내닉네임</span> <span class="myid">thor0250</span>
           <button class="edit_button" onclick="location.href='/MemberEdit.html'"><i class='bx bx-edit-alt'></i>정보수정</button>
-        </div>
+        </div>-->
 
-        <div class="boxes">
-          <div class="box box1">
-            <div class="schedule_title">
-              <i class="uil uil-schedule"></i>
-              <span class="text">Schedule</span>
-            </div>
-            <div class="schedule">일정</div>
-          </div>
-          <div class="box box2">
-            <div class="dday_title">
-              <i class="uil uil-hourglass"></i>
-              <span class="text">D-day</span>
-            </div>
-            <div class="dday">디데이</div>
-          </div>
-          <div class="box box3">
-            <div class="goal_title">
-              <i class="uil uil-calculator-alt"></i>
-              <span class="text">Goal</span>
-            </div>
-            <div class="goal">목표</div>
-          </div>
-        </div>
       </div>
       <!-- <div class="text">Home Content</div> -->
     </div>
   </section>
 
   <script src="main.js"></script>
+
 </body>
+<script>
+  const hidden = document.getElementById("hidden_profile");
+  const menu_btn = document.getElementById("profile-menu-btn");
+
+  function toggleProfile() {
+    console.log('test');
+    hidden.classList.toggle('hidden');
+  }
+
+  menu_btn.addEventListener("click", toggleProfile);
+</script>
 </html>
