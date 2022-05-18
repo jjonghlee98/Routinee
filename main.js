@@ -35,18 +35,10 @@ gBtn.addEventListener("click", () => {
 
 
 
-const calc = () => {
-  var now = new Date($("#start").val());
-  var then = new Date($("#end").val());
-  var gap = now.getTime() - then.getTime();
-  gap = Math.floor(gap / (1000 * 60 * 60 * 24));
-
-  if (gap < 0)
-  {
-      $("#output").text(("D " + gap));
-  }
-  else
-  {
-      $("#output").text(("D + " + gap));
-  }
-}
+// document.addEventListener('DOMContentLoaded', function() {
+//   let calendarEl = document.getElementById('#calendar');
+//   let calendar = new FullCalendar.Calendar(calendarEl, {
+//     initialView: 'dayGridMonth'
+//   });
+//   calendar.render();
+// });

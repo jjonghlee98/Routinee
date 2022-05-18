@@ -17,10 +17,11 @@ body {
   left: 0;
   height: 100%;
   padding: 6px 14px;
-  background: #fefae0;
+  /* background: #f8f9fa; */
+  background: #f8f9fa;
   transition: all 0.6s ease;
   width: 240px;
-  border-right: 2px solid #edede9;
+  border-right: 2px solid #e9ecef;
 }
 
 .sidebar.active {
@@ -32,7 +33,7 @@ body {
   display: flex;
   height: 50px;
   align-items: center;
-  color: #d4a373;
+  color: black;
   opacity: 1;
 }
 
@@ -60,7 +61,7 @@ body {
   width: 50px;
   line-height: 50px;
   transform: translateX(-50%);
-  color: #d4a373;
+  color: black;
   transition: all 0.6s ease;
   cursor: pointer;
 }
@@ -92,7 +93,7 @@ body {
   align-items: center;
   text-decoration: none;
   border-radius: 12px;
-  color: #d4a373;
+  color: black;
 }
 
 .sidebar .links_name {
@@ -105,7 +106,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-  background: #ccd5ae;
+  background: #cddafd;
   transition: all 0.6s ease;
   color: white;
 }
@@ -141,7 +142,7 @@ body {
 }
 
 .sidebar ul li .bx-search:hover {
-  background: #e9edc9;
+  background: #cddafd;
   cursor: pointer;
   color: white;
   transition: all 0.6s ease;
@@ -185,6 +186,7 @@ body {
   left: 240px;
   transition: all 0.6s ease;
   overflow: auto;
+  /* background: #f8f9fa; */
 }
 
 .sidebar.active ~ .dashboard {
@@ -223,7 +225,7 @@ body {
 
 .sidebar .profile_content .profile .profile_detail .name_job {
   margin-left: 10px;
-  color: #d4a373;
+  color: black;
   text-align: center;
 }
 
@@ -240,31 +242,32 @@ body {
 .profile .bx-log-out {
   position: absolute;
   font-size: 22px;
-  color: #d4a373;
+  color: #cddafd;
   left: 85%;
   bottom: 5px;
   min-width: 50px;
   border-radius: 12px;
   line-height: 50px;
   transition: all 0.6s ease;
-  background: #e9edc9;
+  background: white;
   text-align: center;
   transform: translateX(-50%);
 }
 
 .profile .bx-log-out:hover {
-  background: white;
-  color: #83c5be;
+  background: #cddafd;
+  color: white;
   cursor: pointer;
 }
 
 .sidebar.active .profile .bx-log-out:hover {
-  background: none;
+  background: #cddafd;
+  color: white;
 }
 
 .sidebar.active .profile .bx-log-out {
   background: white;
-  color: #83c5be;
+  color: black;
   cursor: pointer;
 }
 
@@ -276,7 +279,8 @@ body {
 .dashboard .top {
   display: flex;
   justify-content: flex-end;
-  background: #fefae0;
+  background: #f8f9fa;
+  /* background: #fefae0; */
   height: 65px;
 }
 
@@ -516,11 +520,13 @@ body {
   text-align: center;
   margin-right: 10px;
   font-size: 22px;
+  color: black;
 }
 
 .dashboard .top .bell {
   line-height: 65px;
   font-size: 24px;
+  color: black;
 }
 
 .dashboard .profile {
@@ -532,15 +538,15 @@ body {
   transform: translateX(-10%);
 }
 
-.dashboard .profile .uil-comment {
+/* .dashboard .profile .uil-comment {
   font-size: 22px;
   transform: translateX(-10%);
 }
 
 .dashboard .profile .uil-bell {
   font-size: 22px;
-  /* padding-left: 5px; */
-}
+  transform: translateX(-50%);
+} */
 
 .dashboard img {
   width: 55px;
@@ -601,8 +607,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  padding: 15px 20px;
-  background: #f1faee;
+  /* padding: 15px 20px; */
+  /* background: #f1faee; */
   top: 0;
   overflow: auto; /* box 칸을 넘으면 넘치치 않고 스크롤이 생김 */
 }
@@ -613,9 +619,11 @@ body {
 }
 
 .dash_content .boxes .box:nth-of-type(1) {
+  /* border: 1px solid black; */
   display: flex;
   justify-content: flex-start;
   flex-grow: 3;
+  /* padding: 0; */
   margin: 0 5px 10px;
   height: 450px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -625,8 +633,10 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-grow: 0;
+  padding: 0;
   margin: 0 5px 10px;
   height: 450px;
+  border: 1px solid black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -634,9 +644,10 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-grow: 0;
+  padding: 0;
   margin: 0 5px 10px;
   height: 450px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); */
 }
 
 .dash_content .boxes .box .schedule_title {
@@ -804,4 +815,9 @@ body {
 
 .selected span, .selected i {
   color: white;
+}
+
+.calendar {
+  padding: 0;
+  margin: 0;
 }
