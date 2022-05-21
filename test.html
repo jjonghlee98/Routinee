@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sidebar tutorial</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+            <i class="bx bxs-cat"></i>
+            <div class="logo_name">Routinee</div>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+        </li>
+        <li>
+          <a href="mypage.html">
+            <i class="bx bx-home"></i>
+            <span class="links_name">My Page</span>
+          </a>
+          <span class="side_menu">My Page</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-calendar-check"></i>
+            <span class="links_name">Calendar</span>
+          </a>
+          <span class="side_menu">Calendar</span>
+        </li>
+        <li>
+          <a href="friends.html">
+            <i class="bx bxs-hand"></i>
+            <span class="links_name">Friends</span>
+          </a>
+          <span class="side_menu">Friends</span>
+        </li>
+      </ul>
+      <div class="profile_content">
+        <div class="profile">
+          <div class="profile_detail">
+            <img src="zzang.jpg" alt="zzang" />
+            <div class="name_job">
+              <div class="name">Jonghwan Lee</div>
+              <div class="job">Web Developer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out"></i>
+        </div>
+      </div>
+    </aside>
+    <!-- sidebar ends -->
+
+    <section class="dashboard">
+      <div class="top">
+        <div class="talk">
+          <div class="talk_border">
+            <i class="uil uil-comment"></i>
+          </div>
+        </div>
+        <div class="bell">
+          <i class="uil uil-bell"></i>
+        </div>
+        <div class="profile">
+          <img src="zzang.jpg" alt="zzang" />
+        </div>
+      </div>
+
+      <div class="dash_content">
+        <div class="main_content">
+          <!-- <div class="title">
+            <i class="uil uil-exclamation-triangle"></i>
+            <span class="text">MAIN-TEST</span>
+          </div> -->
+
+          <div class="boxes">
+            <div class="box box1">
+              <div class="schedule_title">
+                <i class="uil uil-schedule"></i>
+                <span class="text">Calendar</span>
+              </div>
+              <div class="calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showPrint=0&showDate=1&showTabs=0&src=ampvbmdobGVlOThAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="590" height="390" frameborder="0" scrolling="no"></iframe>
+              </div>
+            </div>
+            <div class="box box2">
+              <div class="box2_flex">
+                <div class="title_control">
+                  <div class="dday_title">
+                    <i class="uil uil-hourglass"></i>
+                    <span class="text">D-day</span>
+                  </div>
+                  <div class="dday_content">
+                    <i class="bx bx-alarm-add"></i>
+                  </div>
+                </div>
+
+                <div class="add_dday">
+                  <form action="#" class="add_title_form">
+                    <div class="dday_name">
+                      <label for="add_title_name">D-day</label>
+                      <input type="text" />
+                    </div>
+                    <div class="dday_time_first">
+                      <label for="dday_time_first">Start</label>
+                      <input type="datetime-local" />
+                    </div>
+                    <div class="dday_time_last">
+                      <label for="dday_time_last">Last</label>
+                      <input type="datetime-local" />
+                    </div>
+                    <div class="add_dday_btn">
+                      <button id="dday_btn">Goooood!</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="dday_list">list</div>
+            </div>
+            <div class="box box3">
+              <div class="box3_flex">
+                <div class="title_control">
+                  <div class="goal_title">
+                    <i class="uil uil-calculator-alt"></i>
+                    <span class="text">Goal</span>
+                  </div>
+                  <div class="goal_content">
+                    <i class="bx bx-add-to-queue"></i>
+                  </div>
+                </div>
+
+                <div class="add_goal">
+                  <form action="#" class="goal_title_form">
+                    <div class="goal_name">
+                      <label for="goal_title_name">Goal</label>
+                      <input type="text" />
+                    </div>
+                    <div class="goal_time_first">
+                      <label for="goal_time_first">Start</label>
+                      <input type="datetime-local" />
+                    </div>
+                    <div class="goal_time_last">
+                      <label for="dday_time_last">Last</label>
+                      <input type="datetime-local" />
+                    </div>
+                    <div class="add_goal_btn">
+                      <button id="goal_btn">Goooood!</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="goal_list">list</div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="text">Home Content</div> -->
+        <!-- 시작일 : <input type="date" id="start" /><br />
+        종료일 : <input type="date" id="end" /><br />
+        <input type="button" value="계산!" class="date_btn" />
+        <br /><br />
+        결과 :
+        <div id="output"></div>
+      </div> -->
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
