@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일정 공유 게시판</title>
+  <link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+/>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="freeboard.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo_content" >
+      <div class="logo">
+        <i class="bx bxs-cat"></i>
+        <div class="logo_name" onclick="location.href='main.html';">Routinee</div>
+      </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search..." />
+      </li>
+      <li>
+        <a href="/mypage.html">
+          <i class='bx bx-home' ></i>
+          <span class="links_name">My Page</span>
+        </a>
+        <span class="side_menu">My Page</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-calendar-check'></i>
+          <span class="links_name">Calendar</span>
+        </a>
+        <span class="side_menu">Calendar</span>
+      </li>
+      <li>
+        <a href="/friends.html">
+          <i class='bx bxs-hand' ></i>
+          <span class="links_name">Friend</span>
+        </a>
+        <span class="side_menu">Friend</span>
+      </li>
+      <li>
+        <a href="/freeboard.html" class="selected">
+          <i class='bx bx-comment-detail'></i>
+          <span class="links_name">Community</span>
+        </a>
+        <span class="side_menu">Community</span>
+      </li>
+      <!-- <li>
+        <a href="#">
+          <i class="bx bx-bowl-rice"></i>
+          <span class="links_name">Rice</span>
+        </a>
+        <span class="side_menu">Rice</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-money-withdraw"></i>
+          <span class="links_name">Money</span>
+        </a>
+        <span class="side_menu">Money</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-party"></i>
+          <span class="links_name">Party</span>
+        </a>
+        <span class="side_menu">Party</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-leaf"></i>
+          <span class="links_name">Leaf</span>
+        </a>
+        <span class="side_menu">Leaf</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-hand"></i>
+          <span class="links_name">Hand</span>
+        </a>
+        <span class="side_menu">Hand</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxl-sketch"></i>
+          <span class="links_name">Rubi</span>
+        </a>
+        <span class="side_menu">Rubi</span>
+      </li> -->
+    </ul>
+    <div class="profile_content">
+      <div class="profile">
+        <div class="profile_detail">
+          <img src="zzang.jpg" alt="zzang" />
+          <div class="name_job">
+            <div class="name">Jonghwan Lee</div>
+            <div class="job">Web Developer</div>
+          </div>
+        </div>
+        <i class="bx bx-log-out"></i>
+      </div>
+    </div>
+  </aside>
+  <!-- sidebar ends -->
+
+  <section class="dashboard">
+    <div class="top">
+      <!-- <div class="nav-search">
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search..." />
+      </div> -->
+      <div class="talk">
+        <div class="talk_border">
+          <i class="uil uil-comment"></i>
+        </div>
+      </div>
+      <div class="bell">
+        <i class="uil uil-bell"></i>
+      </div>
+      <div class="profile">
+        <img src="zzang.jpg" alt="zzang" id="profile-menu-btn"/>
+        <div id="hidden_profile" class="hidden">
+          <p class="text mynick">내닉네임</p>
+          <hr>
+          <a href="MemberEdit.html">정보수정</a>
+          <a href="#">로그아웃</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash_content">
+      <div class="board-menu">
+        <span class="main-board-text">일정공유게시판</span>
+        <a href="freeboard.html" class="next-board-text">자유게시판 <i class='bx bx-chevron-right'></i></a>
+      </div>
+
+      <div class="board-headbar">
+        <div class="board-searchbar">
+          <select>
+            <option>제목</option>
+            <option>내용</option>
+            <option>글쓴이</option>
+            <option>댓글내용</option>
+          </select>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+      <div class="result-bar">
+        <span>검색결과 총 <span class="post-count">0</span>건</span>
+        <select>
+          <option>10개씩</option>
+          <option>20개씩</option>
+          <option>40개씩</option>
+          <option>80개씩</option>
+        </select>
+      </div>
+      <table>
+        <tr class="board-throw">
+          <th class="post-num">순서번호</th>
+          <th class="post-title">제목</th>
+          <th class="post-author">공유자</th>
+          <th class="post-date">공유일</th>
+          <th class="post-view">받은 평가</th>
+        </tr>
+        <tr class="board-tdrow">
+          <td class="post-num">2</td>
+          <td class="post-title">윗몸 100회 조지고옴</td>
+          <td class="post-author">최종국</td>
+          <td class="post-date">2022-05-19</td>
+          <td class="post-view">0</td>
+        </tr>
+        <tr class="board-tdrow">
+          <td class="post-num">1</td>
+          <td class="post-title">TOEIC 단어 29일차</td>
+          <td class="post-author">라벤더</td>
+          <td class="post-date">2022-05-12</td>
+          <td class="post-view">5</td>
+        </tr>
+      </table>
+
+      <button class="write-btn">글쓰기</button>
+      <div class="board-footbar">
+        <i class='bx bxs-left-arrow'></i>
+        <a href="#" class="page-num">1</a> | <a href="#" class="page-num">2</a>
+        <i class='bx bxs-right-arrow'></i>
+      </div>
+    </div>
+
+  <script src="main.js"></script>
+
+</body>
+<script>
+  const hidden = document.getElementById("hidden_profile");
+  const menu_btn = document.getElementById("profile-menu-btn");
+
+  function toggleProfile() {
+    console.log('test');
+    hidden.classList.toggle('hidden');
+  }
+
+  menu_btn.addEventListener("click", toggleProfile);
+</script>
+</html>

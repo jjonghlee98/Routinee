@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/jjonghlee98/Routinee#readme",
   "dependencies": {
-    "fullcalendar": "^5.11.0"
+    "crypto": "^1.0.1",
+    "express": "^4.18.1",
+    "fullcalendar": "^5.11.0",
+    "mysql": "^2.18.1"
   }
 }

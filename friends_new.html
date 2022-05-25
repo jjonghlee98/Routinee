@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends</title>
+  <link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+  <link
+  rel="stylesheet"
+  href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+/>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="friends_new.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <i class="bx bxs-cat"></i>
+        <div class="logo_name" onclick="location.href='main.html';">Routinee</div>
+      </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search..." />
+      </li>
+      <li>
+        <a href="/mypage.html">
+          <i class='bx bx-home' ></i>
+          <span class="links_name">My Page</span>
+        </a>
+        <span class="side_menu">My Page</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-calendar-check'></i>
+          <span class="links_name">Calendar</span>
+        </a>
+        <span class="side_menu">Calendar</span>
+      </li>
+      <li>
+        <a href="/friends.html" class="selected">
+          <i class='bx bxs-hand' ></i>
+          <span class="links_name">Friend</span>
+        </a>
+        <span class="side_menu">Friend</span>
+      </li>
+      <li>
+        <a href="/freeboard.html">
+          <i class='bx bx-comment-detail'></i>
+          <span class="links_name">Community</span>
+        </a>
+        <span class="side_menu">Community</span>
+      </li>
+      <!-- <li>
+        <a href="#">
+          <i class="bx bx-bowl-rice"></i>
+          <span class="links_name">Rice</span>
+        </a>
+        <span class="side_menu">Rice</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-money-withdraw"></i>
+          <span class="links_name">Money</span>
+        </a>
+        <span class="side_menu">Money</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-party"></i>
+          <span class="links_name">Party</span>
+        </a>
+        <span class="side_menu">Party</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-leaf"></i>
+          <span class="links_name">Leaf</span>
+        </a>
+        <span class="side_menu">Leaf</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-hand"></i>
+          <span class="links_name">Hand</span>
+        </a>
+        <span class="side_menu">Hand</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxl-sketch"></i>
+          <span class="links_name">Rubi</span>
+        </a>
+        <span class="side_menu">Rubi</span>
+      </li> -->
+    </ul>
+    <div class="profile_content">
+      <div class="profile">
+        <div class="profile_detail">
+          <img src="zzang.jpg" alt="zzang" />
+          <div class="name_job">
+            <div class="name">Jonghwan Lee</div>
+            <div class="job">Web Developer</div>
+          </div>
+        </div>
+        <i class="bx bx-log-out"></i>
+      </div>
+    </div>
+  </aside>
+  <!-- sidebar ends -->
+
+  <section class="dashboard">
+    <div class="top">
+      <!-- <div class="nav-search">
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search..." />
+      </div> -->
+      <div class="talk">
+        <div class="talk_border">
+          <i class="uil uil-comment"></i>
+        </div>
+      </div>
+      <div class="bell">
+        <i class="uil uil-bell"></i>
+      </div>
+      <div class="profile">
+        <img src="zzang.jpg" alt="zzang" />
+      </div>
+    </div>
+
+    <div class="dash_content">
+      <div class="friends_container">
+        <div class="friends_container_left">
+          <div class="friend_list_title titlebox">
+            <label class="menu_title">친구 목록 (<span class="friends_count">2</span>)</label>
+            <div class="friend_list_body bodybox">
+              <div class="friend friend1">
+                <img src="zzang.jpg" alt="zzang" />
+                <span class="friend_name">홍길동</span>
+                <i class='bx bx-dots-vertical-rounded'></i>
+              </div>
+              <div class="friend friend2">
+                <img src="innovator.jpg" alt="zzang" />
+                <span class="friend_name">이몽룡</span>
+                <i class='bx bx-dots-vertical-rounded'></i>
+              </div>
+            </div>
+          </div>
+          <div class="chat_box titlebox">
+            <label class="chat_title"><span class="chat_opposite">이성계</span>님과의 대화</label>
+            <div class="chat_content bodybox">
+
+            </div>
+            <div class="chat_input">
+              <button>첨부</button>
+              <input type="text" placeholder="메시지 입력" />
+              <button>전송</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="titlebox friend_todo_title">
+          <label class="friend_todo_menu"><span class="friend_todo_name">장영실</span>님의 일정</label>
+          <div class="bodybox friend_todo_body">
+            <p class="todo_body_placeholder">친구의 일정을 보려면 좌측의 친구 목록에서 친구를 선택하세요.</p>
+          </div>
+        </div>
+
+        <div class="friend_container_right">
+          <div class="find-friend titlebox">
+            <div class="find-friend-contents">
+            <h3>친구 찾기</h3>
+              <div class="find-friend-bar">
+                <i class="bx bx-search"></i>
+                <input type="text" placeholder="Search..." />
+              </div>
+  
+              <div class="result-box bodybox">
+                <p style="color: #969696">닉네임 혹은 ID로 검색</p>
+                <p style="color: #969696">결과가 여기에 나타납니다.</p>
+              </div>
+            </div> 
+          </div> 
+        <div class="request_title titlebox">
+          <label class="menu_title">친구 요청</label>
+          <button>받은 요청</button>
+          <button>보낸 요청</button>
+          <div class="request_body bodybox">
+            <div class="friend s_friend1">
+              <img src="image3.jpg" alt="zzang" />
+              <span class="friend_name">성춘향</span>
+              <i class='bx bxs-user-check'><span class="hidden-menu">요청수락</span></i>
+              <i class='bx bxs-user-x'><span class="hidden-menu">요청거부</span></i>
+            </div>
+          </div>
+        </div>
+        </div> 
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+#hidden_profile {
+  width: 140px;
+  right: 20px;
+  top: 4rem;
+  padding: 2rem;
+  border: 1px solid black;
+  background-color: #fafafa;
+  /*display: flex;
+  flex-direction: column;*/
+  position: absolute;
+}
+
+#hidden_profile a {
+  text-decoration: none;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.dash_content {
+
+}
+
+.board-menu {
+  text-align: center;
+  margin: 16px auto;
+}
+
+.main-board-text {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.next-board-text {
+  margin-top: 16px;
+  float: right;
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+.board-searchbar i {
+  /* border: 1px solid black; */
+  border-radius: 12px;
+  height: 39px;
+  min-width: 39px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.board-headbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.board-searchbar {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 39px;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  outline: none;
+  padding: 2px;
+  margin: 8px;
+  background-color: white;
+  border: 0.8px solid black;
+}
+
+.board-searchbar input {
+  width: 90%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.board-headbar select {
+  border-radius: 12px;
+  outline: none;
+  height: 33.3px;
+}
+
+.dash_content table {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #d5d5d5;
+  padding: 6px;
+  border: 1px solid black;
+}
+
+.button-container button {
+  float: right;
+  margin: 10px 30px 50px 0;
+  padding: 0.65rem 6.5rem;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: #dedede;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.button-container button:hover {
+cursor: pointer;
+background-color: black;
+color: white;
+}
+
+.board-footbar {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.post-num {
+  width: 85px;
+}
+
+.post-title {
+  width: 320px;
+}
+
+.post-author {
+  width: 145px;
+}
+
+.post-date {
+  width: 220px;
+}
+
+.post-view {
+  width: 130px;
+}
+
+.board-throw th {
+  border-collapse: collapse;
+  padding: 4px;
+  background-color: #97c6fe;
+  border-radius: 8px;
+}
+
+.board-tdrow {
+  border-collapse: collapse;
+  padding: 4px;
+  background-color: #d5d5d5;
+  border-bottom: 0.6px solid black;
+}
