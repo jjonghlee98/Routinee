@@ -1109,8 +1109,7 @@ body {
 }
 
 .selected {
-  background: #ccd5ae;
-  color: white;
+  background: #858e98;
 }
 
 .selected span, .selected i {
