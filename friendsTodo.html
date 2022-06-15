@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sidebar tutorial</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="friendsTodo.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="bx bxs-cat"></i>
+          <div class="logo_name">Routinee</div>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+        </li>
+        <li>
+          <a href="mypage.html">
+            <i class="bx bx-home"></i>
+            <span class="links_name">My Page</span>
+          </a>
+          <span class="side_menu">My Page</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-calendar-check"></i>
+            <span class="links_name">Calendar</span>
+          </a>
+          <span class="side_menu">Calendar</span>
+        </li>
+        <li>
+          <a href="friends.html">
+            <i class="bx bxs-hand"></i>
+            <span class="links_name">Friends</span>
+          </a>
+          <span class="side_menu">Friends</span>
+        </li>
+      </ul>
+      <div class="profile_content">
+        <div class="profile">
+          <div class="profile_detail">
+            <img src="zzang.jpg" alt="zzang" />
+            <div class="name_job">
+              <div class="name">Jonghwan Lee</div>
+              <div class="job">Web Developer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out"></i>
+        </div>
+      </div>
+    </aside>
+    <!-- sidebar ends -->
+
+    <section class="dashboard">
+      <div class="top">
+        <div class="talk">
+          <div class="talk_border">
+            <i class="uil uil-comment"></i>
+          </div>
+        </div>
+        <div class="bell">
+          <i class="uil uil-bell"></i>
+        </div>
+        <div class="profile">
+          <img src="profile.png" alt="zzang" />
+        </div>
+      </div>
+
+      <div class="friends-todo__controls">
+        <div class="friends-todo__list">
+          <div class="friends-todo__container">
+            <div class="triends-todo__current">
+              <p><h3>Current</h3></p>
+              <div>hi</div>
+            </div>
+            <div class="triends-todo__completed">
+              <h3>Completed <i class='bx bxs-check-circle'></i></h3>
+              <div>hi</div>
+            </div>
+            <div class="friends-todo__calendar">
+              캘린더 넣을곳 날짜선택
+            </div>
+          </div>
+
+        </div>
+        <div class="friends-todo__friends">
+          <div class="selected-friend">
+            <img src="profile.png" alt="profile" />
+            <label>Junghwan</label>
+          </div>
+          <div>
+            <img src="profile.png" alt="profile" />
+            <label>Eunjin</label>
+          </div>
+          <div>
+            <img src="profile.png" alt="profile" />
+            <label>24601</label>
+          </div>
+          <div>
+            <img src="profile.png" alt="profile" />
+            <label>Hera</label>
+          </div>
+          <div>
+            <img src="profile.png" alt="profile" />
+            <label>Heracules</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

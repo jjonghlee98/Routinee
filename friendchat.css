@@ -1,0 +1,139 @@
+.friend-chat__controls {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 65px);
+}
+
+.chat-list {
+  background-color: #343a40;
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.chat-main {
+  position: relative;
+  background-color: #2b3035;
+  width: 45%;
+  height: 100%;
+}
+
+.chat-option {
+  background-color: #343a40;
+  width: 25%;
+  height: 100%;
+}
+
+.chat-menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-menu__last-date {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+
+.chat-menu__last-msg {
+  color: #a7a7a7;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chat-menu:nth-of-type(2n) {
+  background-color: #3d444b;
+}
+
+.chat-search {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-input {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.selected {
+  background-color: #65a8df;
+  color: white;
+}
+
+.selected .chat-menu__last-msg {
+  color: white;
+}
+
+.chat-box {
+  overflow-y: auto;
+}
+
+.chat-main button {
+  width: 11%;
+  border: none;
+  background-color: #3366ff;
+  color: white;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.chat-main .chat-input-box {
+  width: 78%;
+  background-color: white;
+}
+
+.chat-main i {
+  margin: 4px;
+  padding: 3px;
+}
+
+.chat-main input {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
+.hidden {
+  display: none;
+  border: none;
+}
+
+.friend-default-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+}
+
+.friend-default-profile img {
+  width: 95px;
+  height: 95px;
+  margin-bottom: 20px;
+}
+
+.friend-default-profile .chat-menu__last-msg {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.msg-count {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 6px;
+  background-color: #2851cc;
+  padding: 2px;
+}
+
+.chat-menu__img {
+  padding: 8px;
+}

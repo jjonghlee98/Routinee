@@ -1,0 +1,102 @@
+.friends-todo__controls {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: calc(100% - 60px);
+  width: 100%; 
+  overflow: auto;
+}
+
+.friends-todo__controls .friends-todo__list {
+  height: calc(100% - 150px);
+  display: flex;
+  flex-direction: row;
+  background-color: #343a40;
+}
+
+.friends-todo__controls .friends-todo__list .friends-todo__container {
+  height: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.friends-todo__controls .friends-todo__list .friends-todo__container div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.friends-todo__controls .friends-todo__list .friends-todo__container div div {
+  background-color: #212529;
+  color: white;
+  width: 250px;
+  padding: 1.25rem 1rem;
+  margin: 14px auto;
+  border-radius: 6px;
+}
+
+.friends-todo__controls .friends-todo__list .friends-todo__container .friends-todo__calendar {
+  position: absolute;
+  right: 0;
+  height: 60%;
+  width: 20%;
+  border: 1px solid purple;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  margin: 1rem;
+}
+
+.friends-todo__controls .friends-todo__friends {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  border-top: 2px solid #212529;
+  padding: 1rem;
+  width: 100%;
+  height: 150px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  background-color: #343a40;
+}
+
+.friends-todo__controls .friends-todo__friends .selected-friend {
+  background-color: #3366ff;
+}
+
+
+.friends-todo__controls .friends-todo__friends div {
+  width: 110px;
+  display:flex;
+  flex-direction: column;
+  border-radius: 6px;
+  background-color: #212529;
+  padding: 0.5rem 1rem 1rem ;
+  margin: 0rem 1rem;
+  align-items: center;
+  cursor:pointer;
+}
+
+.friends-todo__controls .friends-todo__friends div:hover {
+  background-color: #55aaff;
+  transition: .7s;
+}
+
+.friends-todo__controls .friends-todo__friends div img {
+  width: 60px;
+  height: 60px;
+}
+
+.friends-todo__controls .friends-todo__friends div label {
+  margin: 0.25rem 0;
+  color: white;
+}
+
+.bxs-check-circle {
+  color: #33ff33;
+}
+
+h3 {
+  color: white;
+}

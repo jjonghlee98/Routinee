@@ -18,10 +18,10 @@ body {
   height: 100%;
   padding: 6px 14px;
   /* background: #f8f9fa; */
-  background: #f8f9fa;
+  background: #212529;
   transition: all 0.6s ease;
   width: 240px;
-  border-right: 2px solid #e9ecef;
+  border-right: 2px solid #343a40;
 }
 
 .sidebar.active {
@@ -279,7 +279,7 @@ body {
 .dashboard .top {
   display: flex;
   justify-content: flex-end;
-  background: #f8f9fa;
+  background: #212529;
   /* background: #fefae0; */
   height: 65px;
 }

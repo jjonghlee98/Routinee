@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+  rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+  />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="friendchat.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <i class="bx bxs-cat"></i>
+        <div class="logo_name">Routinee</div>
+      </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search..." />
+      </li>
+      <li>
+        <a href="mypage.html">
+          <i class="bx bx-home"></i>
+          <span class="links_name">My Page</span>
+        </a>
+        <span class="side_menu">My Page</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-calendar-check"></i>
+          <span class="links_name">Calendar</span>
+        </a>
+        <span class="side_menu">Calendar</span>
+      </li>
+      <li>
+        <a href="friends.html">
+          <i class="bx bxs-hand"></i>
+          <span class="links_name">Friends</span>
+        </a>
+        <span class="side_menu">Friends</span>
+      </li>
+    </ul>
+    <div class="profile_content">
+      <div class="profile">
+        <div class="profile_detail">
+          <img src="zzang.jpg" alt="zzang" />
+          <div class="name_job">
+            <div class="name">Jonghwan Lee</div>
+            <div class="job">Web Developer</div>
+          </div>
+        </div>
+        <i class="bx bx-log-out"></i>
+      </div>
+    </div>
+  </aside>
+  <!-- sidebar ends -->
+
+  <section class="dashboard">
+    <div class="top">
+      <div class="talk">
+        <div class="talk_border">
+          <i class="uil uil-comment"></i>
+        </div>
+      </div>
+      <div class="bell">
+        <i class="uil uil-bell"></i>
+      </div>
+      <div class="profile">
+        <img src="profile.png" alt="zzang" />
+      </div>
+    </div>
+    
+    <div class="friend-chat__controls">
+      <div class="chat-list">
+        <div class="chat-menu selected">
+          <img src="innovator.jpg" class="chat-menu__img"/>
+          <div class="chat-menu__contents">
+            <p>
+              <span class="chat-menu__friend-name">임꺽정</sp>
+              <span class="chat-menu__last-date">어제</span>
+            </p>
+            <div class="chat-menu__last-msg">들어가세요~<span class="msg-count hidden"></span></div>
+          </div> 
+        </div>
+        <div class="chat-menu">
+          <img src="zzang.jpg" class="chat-menu__img"/>
+          <div class="chat-menu__contents">
+            <p>
+              <span class="chat-menu__friend-name">Traders</sp>
+              <span class="chat-menu__last-date">3일 전</span>
+            </p>
+            <div class="chat-menu__last-msg">아 예<span class="msg-count hidden"></span></div>
+          </div> 
+        </div>
+        <div class="chat-menu">
+          <img src="profile.png" class="chat-menu__img"/>
+          <div class="chat-menu__contents">
+            <p>
+              <span class="chat-menu__friend-name">User3</sp>
+              <span class="chat-menu__last-date">4일 전</span>
+            </p>
+            <div class="chat-menu__last-msg">What the...<span class="msg-count">14</span></div>
+          </div> 
+        </div>
+        <div class="chat-menu">
+          <img src="image3.jpg" class="chat-menu__img"/>
+          <div class="chat-menu__contents">
+            <p>
+              <span class="chat-menu__friend-name">User4</span>
+              <span class="chat-menu__last-date">2주 전</span>
+            </p>
+            <div class="chat-menu__last-msg">Bye<span class="msg-count hidden"></span></div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="chat-main">
+        <div class="chat-search">
+          <button id="search-date-btn">날짜</button>
+          <div class="chat-input-box">
+            <i class='bx bx-search'></i>
+            <input type="text" id="search-input" placeholder="Search...">
+          </div>
+          <button id="send-msg-btn">검색</button>
+        </div>
+        <div class="chat-box">
+
+        </div>
+        <div class="chat-input">
+          <button id="send-file-btn">첨부</button>
+          <div class="chat-input-box">
+            <i class='bx bx-send'></i>
+            <input type="text" id="msg-input" placeholder="Input a Message">
+          </div>
+          <button id="send-msg-btn">전송</button>
+        </div>
+      </div>
+
+      <div class="chat-option">
+        <div class="friend-default-profile">
+          <img src="innovator.jpg" class="chat-option__profileimg" />
+          <p class="chat-option__profilename">임꺽정</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -110,7 +110,7 @@
             <div class="job">Web Developer</div>
           </div>
         </div>
-        <i class="bx bx-log-out"></i>
+        <i class="bx bx-log-out" ></i>
       </div>
     </div>
   </aside>
@@ -136,143 +136,155 @@
           <p class="text mynick">내닉네임</p>
           <hr>
           <a href="MemberEdit.html">정보수정</a>
+          <a href="signup.html">회원가입</a>
           <a href="#">로그아웃</a>
         </div>
       </div>
     </div>
 
     <div class="dash_content">
-      <div class="friends_container">
-        <div class="friends_container_left">
-          <div class="friend_list_title titlebox">
-            <label class="menu_title">친구 목록 (<span class="friends_count">2</span>)</label>
-            <div id="friend_list" class="friend_list_body bodybox">
-              <div class="friend c_friend">
-                <img src="zzang.jpg" alt="zzang" />
-                <span class="friend_name">홍길동</span>
-                <!--<i class='bx bx-dots-vertical-rounded friend-menu-btn'></i>--><i class='bx bxs-user-minus friend-break-btn'></i>
-                <!--<div class="hidden-friend-menu hidden">
-                  <p class="hidden-contents menu-share">일정공유</p>
-                  <p class="hidden-contents menu-chat">채팅하기</p>
-                  <p class="hidden-contents menu-break">친구삭제</p>
-                </div>-->
-              </div>
-              <div class="friend c_friend">
-                <img src="innovator.jpg" alt="zzang" />
-                <span class="friend_name">이몽룡</span>
-                <i class='bx bxs-user-minus friend-break-btn'></i>
-                <!--<div class="hidden-friend-menu hidden">
-                  <p class="hidden-contents menu-share">일정공유</p>
-                  <p class="hidden-contents menu-chat">채팅하기</p>
-                  <p class="hidden-contents menu-break">친구삭제</p>
-                </div>-->
-              </div>
-              <div class="friend c_friend">
-                <img src="innovator.jpg" alt="zzang" />
-                <span class="friend_name">박혁신</span>
-                <i class='bx bxs-user-minus friend-break-btn'></i>
-                <!--<div class="hidden-friend-menu hidden">
-                  <p class="hidden-contents menu-share">일정공유</p>
-                  <p class="hidden-contents menu-chat">채팅하기</p>
-                  <p class="hidden-contents menu-break">친구삭제</p>
-                </div>-->
-              </div>
+      <div class="friends-container">
+        <div class="friends-container__left"> <!-- 좌측 친구목록 및 일정/채팅 버튼 -->
+          <h3>친구 목록 (<span class="friends-count">0</span>)</h3>
+          <div class="friends-list">
+            <!--<div class="friend c-friend">
+              <img src="zzang.jpg" class="friend-img"/>
+              <p class="friend-name">Jim Raynor</p>
+              <i class='bx bxs-user-minus friend-delete-btn'></i>
             </div>
+            <div class="friend c-friend">
+              <img src="innovator.jpg" class="friend-img"/>
+              <p class="friend-name">Kerrigan</p>
+              <i class='bx bxs-user-minus friend-delete-btn'></i>
+            </div>
+            <div class="friend c-friend">
+              <img src="image3.jpg" class="friend-img"/>
+              <p class="friend-name">Fenix</p>
+              <i class='bx bxs-user-minus friend-delete-btn'></i>
+            </div>
+            <div class="friend c-friend">
+              <img src="zzang.jpg" class="friend-img"/>
+              <p class="friend-name">Artanis</p>
+              <i class='bx bxs-user-minus friend-delete-btn'></i>
+            </div>
+            <div class="friend c-friend">
+              <img src="pexels-photo-129731.jpeg" class="friend-img"/>
+              <p class="friend-name">Genji</p>
+              <i class='bx bxs-user-minus friend-delete-btn'></i>
+            </div>
+            <div class="friend c-friend">
+              <img src="profile.png" class="friend-img"/>
+              <p class="friend-name">Soldier: 76</p>
+              <i class='bx bxs-user-minus friend-delete-btn'></i>
+            </div>
+            <div class="friend c-friend">
+              <img src="innovator.jpg" class="friend-img"/>
+              <p class="friend-name">Reinhardt</p>
+              <i class='bx bxs-user-minus friend-delete-btn'></i>
+            </div>-->
           </div>
-          <div class="chat_box hidden titlebox">
-            <label class="chat_title"><span class="chat_opposite"></span>님과의 대화</label>
-            <div class="chat_content bodybox">
-
-            </div>
-            <div class="chat_input">
-              <button>첨부</button>
-              <input type="text" placeholder="메시지 입력" />
-              <button>전송</button>
-            </div>
+          <div class="friends-button-container">
+            <button class="friends-goto-todo " onclick="location.href='friendsTodo.html'"">일정보기</button>
+            <button class="friends-goto-chat " onclick="location.href='friendchat.html'">채팅하기</button>
           </div>
         </div>
-
-        <div class="titlebox friend_todo_title">
-          <p class="friend_todo_name">　</p>
-          <div class="bodybox friend_todo_body">
-            <p class="todo_body_placeholder">친구의 일정을 보려면 좌측의 친구 목록에서 친구를 선택하세요.</p>
-          </div>
-          <div class="friend_todo_buttons">
-            <button class="chat_start_button">친구와 채팅하기</button>
-            <button class="share_button">친구에게 내 일정 공유</button>
-          </div>
-        </div>
-
-        <div class="friend_container_right">
-          <div class="find-friend titlebox">
-            <div class="find-friend-contents">
-            <h3>친구 찾기</h3>
-              <div class="find-friend-bar">
-                <i class="bx bx-search"></i>
-                <input type="text" placeholder="Search..." />
+        <div class="friends-container__right"> <!-- 우측 친구요청 보내기/받기 -->
+          <div class="friends-search">
+            <div class="friends-search-bar">
+              <i class='bx bx-search'></i>
+              <input type="text" class="search-input" placeholder="친구 닉네임 혹은 ID로 검색">
+            </div>
+            <div class="friends-search-list">
+              <!--<div class="friend f-friend">
+                <img src="innovator.jpg" class="friend-img"/>
+                <p class="friend-name">박진수</p>
+                <i class='bx bxs-user-plus' ></i>
               </div>
-  
-              <div class="result-box bodybox">
-                <p class="result-placeholder">닉네임 혹은 ID로 검색</p>
-                <p class="result-placeholder">결과가 여기에 나타납니다.</p>
-                <div class="friend s_friend1">
-                  <img src="image3.jpg" alt="zzang" />
-                  <span class="friend_name">5678</span>
-                  <button class="follow_button">팔로우</button>
+              <div class="friend f-friend">
+                <img src="innovator.jpg" class="friend-img"/>
+                <p class="friend-name">16진수</p>
+                <i class='bx bxs-user-plus' ></i>
+              </div>
+              <div class="friend f-friend">
+                <img src="innovator.jpg" class="friend-img"/>
+                <p class="friend-name">진수성찬</p>
+                <i class='bx bxs-user-plus' ></i>
+              </div>-->
+            </div>
+          </div>
+          <div class="friends-request">
+            <div class="received-request">
+              <h3>받은 친구 요청 (<span class="received-count">0</span>)</h3>
+              <div class="received-request-list">
+                <!--<div class="friend r-friend">
+                  <img src="innovator.jpg" class="friend-img"/>
+                  <p class="friend-name">Zeratul</p>
+                  <p class="received-request-icons">
+                    <i class='bx bxs-user-check'></i>
+                    <i class='bx bxs-user-x' ></i>
+                  </p>
                 </div>
+                <div class="friend r-friend">
+                  <img src="innovator.jpg" class="friend-img"/>
+                  <p class="friend-name">Samir Duran</p>
+                  <p class="received-request-icons">
+                    <i class='bx bxs-user-check'></i>
+                    <i class='bx bxs-user-x' ></i>
+                  </p>
+                </div>
+                <div class="friend r-friend">
+                  <img src="innovator.jpg" class="friend-img"/>
+                  <p class="friend-name">Lucio</p>
+                  <p class="received-request-icons">
+                    <i class='bx bxs-user-check'></i>
+                    <i class='bx bxs-user-x' ></i>
+                  </p>
+                </div>
+                <div class="friend r-friend">
+                  <img src="innovator.jpg" class="friend-img"/>
+                  <p class="friend-name">Zenyatta</p>
+                  <p class="received-request-icons">
+                    <i class='bx bxs-user-check'></i>
+                    <i class='bx bxs-user-x' ></i>
+                  </p>
+                </div>-->
               </div>
-            </div> 
-          </div> 
-        <div class="request_title titlebox">
-          <label class="menu_title">친구 요청</label>
-          <button id="received_button">받은 요청</button>
-          <button id="sent_button">보낸 요청</button>
-          <div class="request_body bodybox">
-            <div class="friend r_friend">
-              <img src="image3.jpg" alt="zzang" />
-              <span class="friend_name">성춘향</span>
-              <i class='bx bxs-user-check'></i>
-              <i class='bx bxs-user-x'></i>
             </div>
-            <div class="friend r_friend">
-              <img src="image3.jpg" alt="zzang" />
-              <span class="friend_name">펩시짱</span>
-              <i class='bx bxs-user-check'></i>
-              <i class='bx bxs-user-x'></i>
-            </div>
-            <div class="friend r_friend">
-              <img src="image3.jpg" alt="zzang" />
-              <span class="friend_name">펩시왜마심</span>
-              <i class='bx bxs-user-check'></i>
-              <i class='bx bxs-user-x'></i>
-            </div>
-            <div class="friend r_friend">
-              <img src="image3.jpg" alt="zzang" />
-              <span class="friend_name">제로콜라</span>
-              <i class='bx bxs-user-check'></i>
-              <i class='bx bxs-user-x'></i>
-            </div>
-            <div class="friend s_friend hidden">
-              <img src="pexels-photo-129731.jpeg" />
-              <span class="friend_name">백수왕</span>
-              <button class="cancel_button">요청취소</button>
+            <div class="sent-request">
+              <h3>보낸 친구 요청 (<span class="sent-count">0</span>)</h3>
+              <div class="sent-request-list">
+                <!--<div class="friend s-friend">
+                  <img src="image3.jpg" class="friend-img"/>
+                  <p class="friend-name">Volibear</p>
+                  <i class='bx bx-block'></i>
+                </div>
+                <div class="friend s-friend">
+                  <img src="image3.jpg" class="friend-img"/>
+                  <p class="friend-name">Anivia</p>
+                  <i class='bx bx-block'></i>
+                </div>
+                <div class="friend s-friend">
+                  <img src="image3.jpg" class="friend-img"/>
+                  <p class="friend-name">Ornn</p>
+                  <i class='bx bx-block'></i>
+                </div>-->
+              </div>
             </div>
           </div>
         </div>
-        </div> 
       </div>
     </div>
 
     <script src="main.js"></script>
-
+    <script src="friends.js"></script>
 </body>
-<script src="friends.js"></script>
+
 <script>
+  //상단 프로필 아이콘으로 개인메뉴 펼치기/접기
   const hidden_profile = document.getElementById("hidden_profile");
   const menu_btn = document.getElementById("profile-menu-btn");
 
   function toggleProfile() {
-    console.log('test');
     hidden_profile.classList.toggle('hidden');
   }
 
