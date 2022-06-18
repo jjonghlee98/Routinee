@@ -4,7 +4,7 @@ h2 {
 
 .login-form__main {
     padding: 1rem;
-    margin: 2rem auto;
+    margin: 5rem auto;
     width: 30%;
     min-width: 19rem;
     max-width: 90%;
@@ -23,12 +23,15 @@ h2 {
     border-radius: 8px;
     border-style: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    transition: .37s;
+    background-color: #3366ff;
+    font-weight: bold;
+    color: white;
 }
 
 .login-form__button button:hover {
     cursor: pointer;
-    background-color: black;
-    color: white;
+    background-color: #112255;
 }
 
 input {
@@ -69,6 +72,7 @@ input {
 .login-menu div a {
     text-decoration: none;
     font-size: 0.9rem;
+    color: #a5a5a5;
 }
 
 .login-menu div:nth-last-child(1) {
@@ -78,4 +82,13 @@ input {
 .card {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
+    background-color: #212529;
+}
+
+body {
+    background-color: #343a40;
+}
+
+.card h2 {
+    color: white;
 }

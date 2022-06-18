@@ -1,6 +1,14 @@
 *
 {
-    transition: .6s;
+    transition: .37s;
+}
+
+body {
+    background-color: #343a40;
+}
+
+.MemberEditForm_ProfilePicture input {
+    background-color: white;
 }
 
 .MemberEditForm_main
@@ -10,6 +18,8 @@
     width: 33%;
     min-width: 22rem;
     max-width: 90%;
+    background-color: #212529;
+    color: white;
 }
 
 .MemberEditForm_control
@@ -101,12 +111,14 @@ input
     font-weight: bold;
     width: 15rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    background-color: #3366ff;
+    color: white;
 }
 
 .MemberEditForm_clear button:hover
 {
     cursor: pointer;
-    background-color: black;
+    background-color: #112255;
     color: white;
 }
 
@@ -125,11 +137,13 @@ input
     font-weight: bold;
     width: 15rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    background-color: #cc0000;
+    color: white;
 }
 .MemberEditForm_secession button:hover
 {
     cursor: pointer;
-    background-color: black;
+    background-color: #440000;
     color: white;
 }
 

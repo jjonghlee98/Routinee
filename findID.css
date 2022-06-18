@@ -1,5 +1,9 @@
 * {
-  transition: .6s;
+  transition: .37s;
+}
+
+body {
+  background-color: #343a40;
 }
 
 h2 {
@@ -21,6 +25,8 @@ input {
   width: 33%;
   min-width: 22rem;
   max-width: 90%;
+  background-color: #212529;
+  color: white;
 }
 
 .find-ID__control {
@@ -39,11 +45,13 @@ label {
   border-radius: 8px;
   border-style: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: #3366ff;
+  color: white;
 }
 
 .find-ID__email button:hover {
   cursor: pointer;
-  background-color: black;
+  background-color: #112255;
   color: white;
 }
 
@@ -52,9 +60,29 @@ label {
   border-radius: 12px;
 }
 
-
 button:hover {
   cursor: pointer;
-  background-color: black;
+  background-color: #112255;
   color: white;
+}
+
+.resultbox {
+  padding: 1.85rem;
+  margin: 1.85rem auto;
+  width: 33%;
+  min-width: 22rem;
+  max-width: 90%;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+}
+
+.result__email {
+  color: #3366ff;
+  font-weight: bold;
+}
+
+.result__id {
+  color: #cc0000;
+  font-weight: bold;
 }
